@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block block_body %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Webpage Details:</h1>
+      <h2><li>Name: {{ webdetail.name }}</li></h2>
+      <h2><li>Url : {{ webdetail.url }}</li></h2>
+      <h2><li>Topic: {{ webdetail.topic }}</li></h2>
+      <div class="container">
+          <div class="jumbotron">
+              <p><a class="btn btn-primary" href="{% url 'myapp:update' webdetail.id %}">Update</a></p>
+              <p><a class="btn btn-danger" href="{% url 'myapp:delete' webdetail.id %}">Delete</a></p>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

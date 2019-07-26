@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block title %}Haksite{% endblock %}
+{% block block_body %}
+<div class="container">
+  <div class="jumbotron">
+    <h1>Webpage List</h1>
+    <ol>
+      {% for wp in webname %}
+      <h2><li><a href="{% url 'myapp:detail'  wp.id  %}">{{wp.name}}</a></li></h2>
+      {% endfor %}
+    </ol>
+      <h3>Today is {{ now }} Fuck IT!!! Python is damn powerful(*_*) Moses.H</h3>
+  </div>
+</div>
+{% endblock %}

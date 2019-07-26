@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% block block_body %}
+<h1>
+    {% if not form.instance.pk %}
+    Create Webpage
+    {% else %}
+    Update Webpage
+    {% endif %}
+</h1>
+<div class="container">
+  <div class="jumbotron">
+      <form method='post'>
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+  </div>
+</div>
+{% endblock %}
+

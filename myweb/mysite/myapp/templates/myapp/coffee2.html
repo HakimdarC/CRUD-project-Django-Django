@@ -1,0 +1,112 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PROJECT</title>
+    <script src="mydoc.js">
+
+    </script>
+      <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="thankyou.html">Welcome</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="bootstrapp.html">Home</a></li>
+        <li><a href="{% url 'admin:index' %}">Sign in</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+  <div class="jumbotron">
+    <h1>My Coffee Project</h1>
+    <p>Welcome to my first coffee project created with the help of bootstrap.</p>
+    <p>I prefer botstrap to CSS and HTML coz itz very first and amazing.</p>
+  </div>
+  <p>It such a fun learning web developement.</p>
+  <p>I cant wait to finish this project and move to the next step.</p>
+  <p>Thank for my tutor perian for the guide and direction:</p>
+
+<ol>
+  <li><a href="https://web.facebook.com/" alt="Fjords" style="width:100%">Coffee</a></li>
+  <li><a href="http://www.tomtomcoffee.co.uk/wp-content/uploads/2016/12/3-Coffee-House.jpg" alt="Lights" style="width:100%">Tea</a>
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li><a href="https://www.cindynord.com/wp-content/uploads/2015/08/Coffee-image.jpg' %}" style="width:100%">Milk</a></li>
+</ol>
+
+<h2>below is the list of coffee:</h2>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="http://www.tomtomcoffee.co.uk/wp-content/uploads/2016/12/3-Coffee-House.jpg" style="width:100%">
+        <div class="caption">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="https://www.cindynord.com/wp-content/uploads/2015/08/Coffee-image.jpg"  style="width:100%">
+        <div class="caption">
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/fjords.jpg">
+        <img src="http://wallpapersdsc.net/wp-content/uploads/2016/09/Coffee-Beans-HD-Wallpaper.jpg"  style="width:100%">
+        <div class="caption">
+
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+  <div class="thumbnail">
+
+    <a href="">
+      <img src="http://www.tomtomcoffee.co.uk/wp-content/uploads/2016/12/3-Coffee-House.jpg" style="width:100%">
+      <div class="caption">
+      </div>
+    </a>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="thumbnail">
+    <a href="/w3images/nature.jpg">
+      <img src="https://www.cindynord.com/wp-content/uploads/2015/08/Coffee-image.jpg" style="width:100%">
+      <div class="caption">
+      </div>
+    </a>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="thumbnail">
+    <a href="/w3images/fjords.jpg">
+      <img src="http://wallpapersdsc.net/wp-content/uploads/2016/09/Coffee-Beans-HD-Wallpaper.jpg" style="width:100%">
+      <div class="caption">
+
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+  </body>
+</html>

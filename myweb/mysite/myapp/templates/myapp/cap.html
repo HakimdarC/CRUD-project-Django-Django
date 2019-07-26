@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <title>MYproject</title>
+  </head>
+  <body>
+    <h2>FILL WEBSITE DETAILS BELOW:</h2>
+    <div class='container'>
+      <form method="post" action="{% url 'myapp:cap' %}">
+        {% csrf_token %}
+        {{  form.as_p }}
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+  </body>
+</html>
